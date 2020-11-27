@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+h1{
+    color:white;
+    font-size: 60px;
+    font-family: 'Goldman', cursive;
+}
+
+.kezdo_kepernyo p{
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.kezdo_kepernyo{
+    background-image:url("hatter.jpg");
+    height: 700px;
+}
+
+body{
+    margin: 0;
+}
+
+.kezdo_szoveg{
+    margin-left:20%;
+}
+
+#varos{
+    display: grid;
+    padding: 0 10%;
+}
+
+.item1, .item3{
+    grid-column: 1 / 2;
+}
+
+.item2, .item4{
+    grid-column: 2 / 3;
+}
+
+#varos p{
+    text-align: justify;
+    margin: 50px 8%;
+    font-size:17px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+hr{
+    border-style: dotted;
+    border-bottom: 0;
+    border-width: 5px;
+    width: 15%;
+    border-color: grey;
+}
+
+#latvanyossag{
+    display: grid;
+    padding: 80px;
+}
+
+.item3, .item4{
+    text-align: center;
+    width: 40%;
+    margin: 30px auto;
+}
+
+#latvanyossag img{
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+.balra{
+    float: left;
+}
+
+.jobbra{
+    float: right;
+}
+
+#kultura img{
+    margin: 0 30px;
+    border-radius: 20%;
+    border: 2px solid black;
+}
+
+#kultura{
+    padding: 80px;
+}
+
+#kultura div{
+    height: 200px;
+}
+
+#kultura p{
+    font-size: 17px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    float: left;
+}
+
+li img{
+    margin-left:10px;
+}
+
+.jobbra li a{
+    display: block;
+    color: #EEEDAE;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav{
+    margin-bottom: 80px;
+    padding: 10px;
+}
+
+li a:hover{
+    color: white;
+}
+
+@media only screen and (max-width: 1200px){
+ #latvanyossag{
+     display:block;
+ }   
+}
+
+@media only screen and (max-width: 950px){
+    #varos{
+        display:block;
+    }
+    
+    #varos p{
+        text-align: center;
+    }
+
+    #latvanyossag{
+        padding: 20px;
+    }
+
+    #latvanyossag img{
+        height: 100px;
+    }
+
+    #kultura div{
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    #kultura div{
+        height: 460px;
+    }
+    
+    .kezdo_szoveg{
+        margin:0 auto;
+        text-align: center;
+    }
+
+    .kezdo_kepernyo{
+        background-position: left;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    #kultura div{
+        height: 600px;
+        text-align: center;
+    }
+
+    #kultura img{
+        float: none;
+    }
+}
